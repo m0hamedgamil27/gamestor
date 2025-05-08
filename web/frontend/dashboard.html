@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to the Game Dashboard</h2>
+    <div class="options">
+      <div class="adminoption">
+        <div class="form-section">
+          <h3>Add Game</h3>
+          <form id="addGameForm">
+            <input type="text" name="name" placeholder="Game Name" required>
+            <input type="number" name="price" placeholder="Price (USD)" required>
+            <input type="text" name="description" placeholder="Description" required>
+            <input type="text" name="category" placeholder="Category" required>
+            <button type="submit">Add Game</button>
+          </form>
+        </div>
+
+        <div class="form-section">
+          <h3>Delete Game</h3>
+          <form id="deleteGameForm">
+            <input type="text" id="gamename" name="gameName" placeholder="Game Name" required>
+            <button type="submit">Delete Game</button>
+            <div id="GameDetails"></div>
+          </form>
+        </div>
+      </div>
+      <div class="otheroptions">
+        <div class="form-section">
+          <h3>Patch User - Add Game to User List</h3>
+          <form id="patchUserForm">
+            <input type="text" id="patchGameName" placeholder="Game Name to Add" required>
+            <button type="submit">Add Game to User</button>
+          </form>
+        </div>
+        <div class="form-section">
+          <h3>View All Games</h3>
+          <button id="viewAllGamesBtn">View All Games</button>
+          <ul id="gamesList"></ul>
+        </div>
+
+        <div class="form-section">
+          <h3>View Account Details</h3>
+          <button id="viewAccountBtn">View Account Details</button>
+          <div id="accountDetails"></div>
+        </div>
+
+        <div class="form-section">
+          <h3>Delete This Account</h3>
+          <button id="deleteAccountBtn">Delete Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
